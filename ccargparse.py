@@ -55,6 +55,7 @@ def __process_data_line(line):
     """
 
     log = logging.getLogger("process_data_line")
+    line = line.strip()
     line = line.split(" ")
     skip_next = False
     source_files = set()
